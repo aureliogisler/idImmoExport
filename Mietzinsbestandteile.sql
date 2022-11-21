@@ -1,6 +1,6 @@
 -- Mietzinsbestandteile.sql
 
-SELECT 
+SELECT DISTINCT
 utab1.objectContractNumber,
 TO_CHAR(utab1.ab_datum, 'DD.MM.YYYY') AS validFrom,
 CASE WHEN obj_preis.tk_ertragsart = '01' THEN 1 ELSE 
